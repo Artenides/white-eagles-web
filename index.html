@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Eagles — Guild Roster</title>
+  <link rel="stylesheet" href="css/styles.css?v=1">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="brand-block">
+        <div class="brand-mark">WE</div>
+        <div>
+          <h1>White Eagles</h1>
+          <p id="guild-meta" class="muted">Guild roster</p>
+        </div>
+      </div>
+      <div id="roster-updated" class="updated-pill"></div>
+    </header>
+
+    <main class="main-content">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Classes</h2>
+        </div>
+        <div id="class-summary" class="class-summary"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Roster</h2>
+          <span id="roster-count" class="pill"></span>
+        </div>
+        <div class="toolbar">
+          <input id="roster-search" type="search" placeholder="Search by name, class or rank...">
+        </div>
+        <div id="roster-status" class="status-message"></div>
+        <div class="table-wrap">
+          <table id="roster-table" class="roster-table" hidden>
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="roster-pagination" class="pagination"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js?v=1"></script>
+</body>
+</html>
